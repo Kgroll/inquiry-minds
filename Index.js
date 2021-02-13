@@ -1,10 +1,10 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 
-const Employee = require('./lib/Employee.js');
+/*const Employee = require('./lib/Employee.js');
 const Manager = require('./lib/Manager.js');
 const Engineer = require('./lib/Engineer.js');
-const Intern = require('./lib/Intern.js');
+const Intern = require('./lib/Intern.js');*/
 
 const generatePage = require('./src/page-template.js');
 
@@ -13,7 +13,17 @@ const inquiryMinds = [];
 //const  {writeFile, copyFile } = require('./utils/generate-site.js')
 
 function getEmployee(){}
+
 inquirer.prompt([
+  {
+    type: 'list',
+    name: 'employeeType',
+    message: 'Please choose the employee type:',
+    choices: ['Manager', 'Engineer', 'Intern'],
+    
+  
+  },
+  
   {
       type: 'input',
       name: 'name',            
@@ -30,20 +40,14 @@ inquirer.prompt([
       message: "Enter the employee's email address.",
   },
    
-  {
-      type: 'list',
-      name: 'employeeType',
-      message: 'Please choose the employee type:',
-      choices: ['Manager', 'Engineer', 'Intern'],
-
-  },
+ 
   ])
 //ask questions
 
 
 
 
-   /*   promptUser()
+   /*   getEmployee()
      .then(promptProject)
      .then(portfolioData => {      
  return  generatePage(portfolioData);
