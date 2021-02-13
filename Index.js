@@ -1,6 +1,7 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 
+const Employee = require('./lib/Employee.js');
 const Manager = require('./lib/Manager.js');
 const Engineer = require('./lib/Engineer.js');
 const Intern = require('./lib/Intern.js');
@@ -11,26 +12,35 @@ const inquiryMinds = [];
 
 //const  {writeFile, copyFile } = require('./utils/generate-site.js')
 
-function getManager() {}
+function getEmployee(){}
+inquirer.prompt([
+  {
+      type: 'input',
+      name: 'name',            
+      message: "Enter the employee's name.",            
+  },
+  {
+      type: 'number',
+      name: 'id',
+      message: "Enter the employee's id number.",
+  },
+  {
+      type: 'link',
+      name: 'email',
+      message: "Enter the employee's email address.",
+  },
+   
+  {
+      type: 'list',
+      name: 'employeeType',
+      message: 'Please choose the employee type:',
+      choices: ['Manager', 'Engineer', 'Intern'],
+
+  },
+  ])
 //ask questions
- inquirer.prompt([
-        {
-            type: 'input',
-            name: 'managerNname',            
-            message: "Enter the manager's name.",            
-        },
-        {
-            type: 'number',
-            name: 'id',
-            message: "Enter the manager's id number.",
-        },
-        {
-            type: 'link',
-            name: 'email',
-            message: "Enter the manager's email address.",
-        },
-    ])     
-  
+
+
 
 
    /*   promptUser()
@@ -55,3 +65,4 @@ function getManager() {}
     function buildInquiryMinds() {
         fs.writeFileSync('./dist/index.html', renderPage(inquiryMinds), 'UTF-8');
     }
+  

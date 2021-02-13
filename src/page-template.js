@@ -55,7 +55,7 @@ const generateAbout = aboutText => {
   </section>
   `;
   };
-  const generatePage = (name, github) => {
+  const generatePage = (name, id, email,) => {
     return `
     <!DOCTYPE html> 
     <html lang="en"> 
