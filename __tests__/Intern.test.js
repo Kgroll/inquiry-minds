@@ -1,11 +1,11 @@
 
-const Intern = require('../Intern.js');
+const Intern = require('./Intern.js');
 
 
 test('check if name, id, email, school and role are added', ()  => {    
 
     const intern = new Intern('Kristen', '5', 'groller@rogers.com', 'Intern', 'UofT');
- //   const intern = new Intern ('Dave', '20', '@gmail', 'employee', 'UofT');
+ //   const intern = new Intern ('2', 'n', 'gmail', 'employee', '66');
 
     expect(intern.name).toBe(expect.any(String));
     expect(intern.id).toBe(expect.any(Number));
