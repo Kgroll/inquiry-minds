@@ -1,4 +1,4 @@
-let buildInquiryMinds = makeTeam => {
+const buildInquiryMinds = makeTeam => {
     if (!makeTeam) {
       return '';
     }
@@ -19,7 +19,7 @@ let buildInquiryMinds = makeTeam => {
           
         </div>
         `;
-    })
+    /*
     .join('')}
   
     ${makeTeamArr
@@ -45,7 +45,7 @@ let buildInquiryMinds = makeTeam => {
   };
   const generatePage = (name, id, email,) => {
     return `
-    /*<!DOCTYPE html> 
+    <!DOCTYPE html> 
     <html lang="en"> 
     <head>
       <meta charset="UTF-8">
