@@ -15,7 +15,7 @@
   ## Descripition
 
   This project is a fast and easy wan to input the details of a work team using command line prompts and then a polished display page.
-![image](https://user-images.githubusercontent.com/75186217/107985360-f40a6980-6f97-11eb-98da-aad3cdf08789.png)
+![image](https://user-images.githubusercontent.com/75186217/107985732-a3474080-6f98-11eb-82cc-a44d58ab5995.png)
   ## Installation
 
   Once node has been installe simply click on the GitHub link and when in the command line enter node index.js and follow the prompts! When you are done it notifies you the a page has been created, click on "Go Live" and the page will be displayed.
