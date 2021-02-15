@@ -1,5 +1,5 @@
   
-  # Repository Title:   Inquriy Minds Team Builder      
+  # Repository Title:   Inquiry Minds Team Builder      
     
 
   ## Table of Contents
@@ -28,28 +28,12 @@
 
   Once node has been installe simply click on the GitHub link and when in the command line enter node index.js and follow the prompts! When you are done it notifies you the a page has been created, click on "Go Live" and the page will be displayed.
 
-  ## Features
-
-  
-
-  ## License
-
-  Licensed by:  
-  
-  For more information go to:  
-
-  ## Contributions
-
-  undefined
-
+ 
   ## Tests
+  
+  Test were done to confirm the appropriate information was present for each employee.   
 
   
-
-  ## Credits
-
-  None
-
   ## Questions
 
    GitHub Link:   https://github.com/Kgroll
