@@ -62,8 +62,8 @@ function generatePage() {
           </div>
         <div class="w3-card-4" style="width:50% height: 10px">ID: ${answers.id}</div>
 
-        <button class="w3-button w3-block w3-dark-grey">Email: ${answers.email}</button>
-        <div class="w3-card-4" style="width:50% height: 10px">Office Number: ${answers.office}</div>
+        <button class="w3-button w3-block w3-dark-grey"><a href= "${answers.email}"</button>
+        <div class="w3-card-4" style="width:50% height: 10px"> Office Number: ${answers.office}</div>
         </div>      
 
 

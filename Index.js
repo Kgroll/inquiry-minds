@@ -162,7 +162,7 @@ const promptUser = () => {
             </header>
           <div class="w3-card-4" style="width:50% height: 10px">ID: ${answers.id}</div>
   
-          <button class="w3-button w3-block w3-dark-grey">Email: ${answers.email}</button>
+          <button class="w3-button w3-block w3-dark-grey"><a href=" ${answers.email}"> E-mail: </button>
           <div class="w3-card-4" style="width:50% height: 10px">Office Number: ${answers.office}</div>
           </div>`    
 
@@ -179,7 +179,7 @@ const promptUser = () => {
         <div class="w3-card-4" style="width:50% height: 10px">ID: ${answers.id}</div>
 
         <button class="w3-button w3-block w3-dark-grey"><a href=" ${answers.email}"> E-mail: </button>
-        <div class="w3-card-4" style="width:50% height: 10px"><a href="https://github.com/${answers.github}" class="btn mt-auto"><i class="fab fa-github mr-2"></i> GitHub </a>
+        <div class="w3-card-4" style="width:50% height: 10px"><a href="https://github.com/${answers.github}"><class="btn mt-auto"><i class="fab fa-github mr-2"></i> GitHub </a>
         </div>
         </div>`
         employees.push(engineer);
@@ -194,7 +194,7 @@ const promptUser = () => {
               </header>
           <div class="w3-card-4" style="width:50% height: 10px">ID: ${answers.id}</div>
   
-          <button class="w3-button w3-block w3-dark-grey">Email: ${answers.email}</button>
+          <button class="w3-button w3-block w3-dark-grey"><a href=" ${answers.email}"> E-mail: </button>
           <div class="w3-card-4" style="width:50% height: 10px">School: ${answers.school}</div>
           </div>`
           employees.push(intern);
