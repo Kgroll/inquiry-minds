@@ -8,15 +8,7 @@
 
   * [Installation](#installation)
 
-  * [Features](#features)
-
-  * [License](#license)
-
-  * [Contributions](#contributions)
-
   * [Tests](#tests)
-
-  * [Credits](#credits)
 
   * [Questions](#questions)
 
