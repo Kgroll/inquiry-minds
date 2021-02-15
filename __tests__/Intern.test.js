@@ -1,15 +1,15 @@
 
-const Intern = require('./Intern.js');
+const Intern = require('../lib/Intern.js');
 
 
-test('check if name, id, email, school and role are added', ()  => {    
+test('check new intern object', ()  => {    
 
-    const intern = new Intern('Kristen', '5', 'groller@rogers.com', 'Intern', 'UofT');
+    const intern = new Intern('Kristen', '5', 'groller@rogers.com', 'UofT');
  //   const intern = new Intern ('2', 'n', 'gmail', 'employee', '66');
 
-    expect(intern.name).toBe(expect.any(String));
-    expect(intern.id).toBe(expect.any(Number));
-    expect(intern.email).toBe(expect.stringContaining('@'));
-    expect(intern.school).toBe(expect.any(String));
-    expect(intern.role).toBe('Intern');
+    expect(intern.name).toBe('Kristen');
+    expect(intern.id).toBe('5');
+    expect(intern.email).toBe('groller@rogers.com');
+    expect(intern.school).toBe('UofT');
+    
 });

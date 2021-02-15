@@ -1,11 +1,12 @@
-const Employee = require('./lib/Employee.js');
+const Employee = require('../lib/Employee.js');
 
-test('check if name, id, email, github and role are added', ()  => {    
-    const employee = new Employee();
+test('create an employee object', ()  => {    
+   
+    const employee = new Employee('Kristen', '5', 'groller@rogers.com');
+ //   const employee = new employee ('2', 'n', 'gmail', 'employee', '66');
 
-expect(employee.name).toBe(expect.any(String));
-expect(employee.id).toBe(expect.any(Number));
-expect(employee.email).toBe(expect.stringContaining('@'));
-expect(employee.github).toBe(expect.stringContaining('git'));
-expect(employee.role).toBe('employee');
+    expect(employee.name).toBe('Kristen');
+    expect(employee.id).toBe('5');
+    expect(employee.email).toBe('groller@rogers.com');
+    
 });

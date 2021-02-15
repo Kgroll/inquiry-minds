@@ -1,14 +1,14 @@
-const { TestScheduler } = require('jest');
-const Employee = require('../lib/Employee');
+
 const Manager = require('../lib/Manager');
 
 
-test('check if name, id, email, office and role are added', ()  => {    
-    const manager = new Manager('Dave', '20', '@gmail', 'employee', '200');
+test('creates an Manager object', ()  => {    
+const manager = new Manager('Kristen', '5', 'groller@rogers.com', '2');
+//   const manager = new manager ('2', 'n', 'gmail', 'employee', '66');
 
-expect(manager.name).toBe(expect.any(String));
-expect(manager.id).toBe(expect.any(Number));
-expect(manager.email).toBe(expect.stringContaining('@'));
-expect(manager.office).toBe(any(Number));
-expect(manager.role).toBe('manager');
-})
+   expect(manager.name).toBe('Kristen');
+   expect(manager.id).toBe('5');
+   expect(manager.email).toBe('groller@rogers.com');
+   expect(manager.office).toBe('2');
+
+});

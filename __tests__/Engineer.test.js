@@ -1,13 +1,13 @@
-const { TestScheduler } = require('jest');
-const Engineer = require('./lib/Engineer.js');
-//const Employee = require('./lib/Employee.js');
+const Engineer = require('../lib/Engineer.js');
 
-test('check if name, id, email, github and role are added', ()  => {    
-    const engineer = new Engineer('Dave', '20', '@gmail', 'employee', '200');
+test('create an engineer object', ()  => {    
+   
+    const engineer = new Engineer('Kristen', '5', 'groller@rogers.com', 'git');
+ //   const engineer = new engineer ('2', 'n', 'gmail', 'employee', '66');
 
-expect(engineer.name).toBe(expect.any(String));
-expect(engineer.id).toBe(expect.any(Number));
-expect(engineer.email).toBe(expect.stringContaining('@'));
-expect(engineer.github).toBe(expect.stringContaining('git'));
-expect(engineer.role).toBe(expect('engineer'));
+    expect(engineer.name).toBe('Kristen');
+    expect(engineer.id).toBe('5');
+    expect(engineer.email).toBe('groller@rogers.com');
+    expect(engineer.github).toBe('git');
+
 });
