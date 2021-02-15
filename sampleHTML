@@ -1,0 +1,77 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Inqury Minds</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Public+Sans:300i,300,500&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+ 
+  <h1>Inquiry Minds</h1>
+  </head>
+
+<body>
+
+<div class="card-deck" style="width: 18rem">
+            <div class="card">
+              <div class="card-header">
+              <p> Tom Thumb</p>
+              <p><i class="fas fa-mug-hot"> Manager</i></p>
+              </div>
+              <div class="card-body">
+                <p class="list-group list-group-flush"></p>
+                  <p class="list-group-item">ID: 1</p>
+                  <p class="list-group-item"><a href="mailto: tom@mail"> E-mail: tom@mail</a></p>
+                  <p class="list-group-item">Office Number: 1</p>
+                                
+              </div>
+            </div>
+          </div><div class="card-deck" style="width: 18rem">
+          <div class="card">
+          <div class="card-header">
+            <p> Kristen Groller</p>          
+            <p><i class="fas fa-calculator"> Engineer</i></p>
+          </div>
+        <div class="card-body"
+          <p class ="list-group list-group-flush></p>
+            <p class="list-group-item">ID: 2</p>
+            <p class="list-group-item"><a href="mailto: groller@rogers.com"> E-mail: groller@rogers.com</a></p>
+            <p class="list-group-item"><a href="https://github.com/kgroll" class="btn mt-auto"><i class="fab fa-github mr-2"></i> GitHub </a></p>
+            
+            </div>
+          </div>
+        </div><div class="card-deck" style="width: 18rem">
+            <div class="card">
+            <div class="card-header">
+              <p> Jane Smith</p>          
+              <p><i class="fas fa-university"> Intern</i></p>
+            </div>
+          <div class="card-body"
+            <p class ="list-group list-group-flush></p>
+              <p class="list-group-item">ID: 3</p>
+              <p class="list-group-item"><a href="mailto: jane2mail"> E-mail: jane2mail</a></p>
+              <p class="list-group-item"> School: U of T</p>
+              
+            </div>
+          </div>
+        </div><div class="card-deck" style="width: 18rem">
+            <div class="card">
+            <div class="card-header">
+              <p> John Doe</p>          
+              <p><i class="fas fa-university"> Intern</i></p>
+            </div>
+          <div class="card-body"
+            <p class ="list-group list-group-flush></p>
+              <p class="list-group-item">ID: 4</p>
+              <p class="list-group-item"><a href="mailto: john@doe"> E-mail: john@doe</a></p>
+              <p class="list-group-item"> School: Mohawk College</p>
+              
+            </div>
+          </div>
+        </div>}
+
+ </body>
+ </html>
