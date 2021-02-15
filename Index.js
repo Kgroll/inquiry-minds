@@ -10,6 +10,7 @@ const html = `<!DOCTYPE html>
   <title>Inqury Minds</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
   <link href="https://fonts.googleapis.com/css?family=Public+Sans:300i,300,500&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
 
   <style> 
@@ -29,12 +30,20 @@ const html = `<!DOCTYPE html>
   * {
     box-sizing: border-box;
   }
-  
+  .h1 {
+    background-color: secondary;
+    font-weight: 500;
+    margin: 5px 0;
+    color: var(--dark);
+    line-height: 1.25;
+    text-align: center;
+  }
   
   .card {
     margin: 0 0 20px 0;
     border: 3px solid var(--dark);
     border-radius: var(--border-radius);
+    justify-content: center;
   }
   
   .card-header {
@@ -49,11 +58,11 @@ const html = `<!DOCTYPE html>
   }
            
   </style>
+  <h1>Inquiry Minds</h1>
   </head>
 
 <body>
-<div class = "jumbotron">
-</div>
+
 {Placeholder}
 
  </body>
@@ -153,50 +162,62 @@ const promptUser = () => {
                
           });  
           
+         
           function addManager(answers) {
-            const manager = `<div class="w3-panel w3-card-4">
-            <header class="w3-container w3-blue">
-              <h1> ${answers.name}
-              <br/>
-              Manager</h1>
-            </header>
-          <div class="w3-card-4" style="width:50% height: 10px">ID: ${answers.id}</div>
-  
-          <button class="w3-button w3-block w3-dark-grey">Email: ${answers.email}</button>
-          <div class="w3-card-4" style="width:50% height: 10px">Office Number: ${answers.office}</div>
+            const manager = `<div class="card-deck" style="width: 18rem">
+            <div class="card">
+              <div class="card-header">
+              <p> ${answers.name}</p>
+              <p><i class="fas fa-mug-hot"> Manager</i></p>
+              </div>
+              <div class="card-body">
+                <p class="list-group list-group-flush"></p>
+                  <p class="list-group-item">ID: ${answers.id}</p>
+                  <p class="list-group-item"><a href="mailto: ${answers.email}"> E-mail: ${answers.email}</a></p>
+                  <p class="list-group-item">Office Number: ${answers.office}</p>
+                                
+              </div>
+            </div>
           </div>`    
 
           employees.push(manager)
           promptUser();
           }
           function addEngineer(answers) {
-            const engineer = `<div class="w3-panel w3-card-4">
-          <header class="w3-container w3-green">
-            <h1> ${answers.name}
-            <br/>
-            Engineer</h1>
-          </header>
-        <div class="w3-card-4" style="width:50% height: 10px">ID: ${answers.id}</div>
-
-        <button class="w3-button w3-block w3-dark-grey"><a href=" ${answers.email}"> E-mail: </button>
-        <div class="w3-card-4" style="width:50% height: 10px"><a href="https://github.com/${answers.github}" class="btn mt-auto"><i class="fab fa-github mr-2"></i> GitHub </a>
-        </div>
+            const engineer = `<div class="card-deck" style="width: 18rem">
+          <div class="card">
+          <div class="card-header">
+            <p> ${answers.name}</p>          
+            <p><i class="fas fa-calculator"> Engineer</i></p>
+          </div>
+        <div class="card-body"
+          <p class ="list-group list-group-flush></p>
+            <p class="list-group-item">ID: ${answers.id}</p>
+            <p class="list-group-item"><a href="mailto: ${answers.email}"> E-mail: ${answers.email}</a></p>
+            <p class="list-group-item"><a href="https://github.com/${answers.github}" class="btn mt-auto"><i class="fab fa-github mr-2"></i> GitHub </a></p>
+            
+            </div>
+          </div>
         </div>`
         employees.push(engineer);
         promptUser();        
           }
           function addIntern(answers) {
-            const intern =  `<iv class="w3-panel w3-card-4">
-            <header class="w3-container w3-yellow">
-              <h1> ${answers.name}
-              <br/>
-              Intern</h1>              
-              </header>
-          <div class="w3-card-4" style="width:50% height: 10px">ID: ${answers.id}</div>
-  
-          <button class="w3-button w3-block w3-dark-grey">Email: ${answers.email}</button>
-          <div class="w3-card-4" style="width:50% height: 10px">School: ${answers.school}</div>
-          </div>`
+            const intern =  `<div class="card-deck" style="width: 18rem">
+            <div class="card">
+            <div class="card-header">
+              <p> ${answers.name}</p>          
+              <p><i class="fas fa-university"> Intern</i></p>
+            </div>
+          <div class="card-body"
+            <p class ="list-group list-group-flush></p>
+              <p class="list-group-item">ID: ${answers.id}</p>
+              <p class="list-group-item"><a href="mailto: ${answers.email}"> E-mail: ${answers.email}</a></p>
+              <p class="list-group-item"> School: ${answers.school}</p>
+              
+            </div>
+          </div>
+        </div>`
           employees.push(intern);
           promptUser();
           }
@@ -210,5 +231,3 @@ const promptUser = () => {
           };
         } 
         promptUser();
-   
-      
