@@ -12,52 +12,7 @@ const html = `<!DOCTYPE html>
   <link href="https://fonts.googleapis.com/css?family=Public+Sans:300i,300,500&display=swap" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
-
-  <style> 
-  :root {
-    --primary: #9dbdc6;
-    --secondary: #daeaef;
-    --tertiary: #ff3d2e;
-    --light: #ffffff;
-    --dark: #272f32;
-    --border-radius: 0.3rem;
-    --spacing-one: calc(1rem * 0.25);
-    --spacing-two: calc(1rem * 0.5);
-    --spacing-three: 1rem;
-    --spacing-four: calc(1rem * 1.5);
-    --spacing-five: calc(1rem * 3);
-  }
-  * {
-    box-sizing: border-box;
-  }
-  .h1 {
-    background-color: secondary;
-    font-weight: 500;
-    margin: 5px 0;
-    color: var(--dark);
-    line-height: 1.25;
-    text-align: center;
-  }
-  
-  .card {
-    margin: 0 0 20px 0;
-    border: 3px solid var(--dark);
-    border-radius: var(--border-radius);
-    justify-content: center;
-  }
-  
-  .card-header {
-    color: var(--primary);
-    background-color: var(--dark);
-    padding: 2.5%;
-    border-radius: calc(0.18rem - 1px) calc(0.18rem - 1px) 0 0;
-  }
-  
-  .card-body {
-    padding: 2.5%;
-  }
-           
-  </style>
+ 
   <h1>Inquiry Minds</h1>
   </head>
 
@@ -70,7 +25,7 @@ const html = `<!DOCTYPE html>
 `;
 
 
-//personal questions
+// ask questions
 const promptUser = () => {
    inquirer.prompt([
     {
@@ -162,7 +117,7 @@ const promptUser = () => {
                
           });  
           
-         
+         //add employee cards
           function addManager(answers) {
             const manager = `<div class="card-deck" style="width: 18rem">
             <div class="card">
