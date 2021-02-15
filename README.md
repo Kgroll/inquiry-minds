@@ -24,7 +24,7 @@
   ## Tests
   
   Test were done to confirm the appropriate information was present for each employee.   
-
+  ![image](https://user-images.githubusercontent.com/75186217/107985038-4e56fa80-6f97-11eb-9c64-33b67104da7e.png)
   
   ## Questions
 
